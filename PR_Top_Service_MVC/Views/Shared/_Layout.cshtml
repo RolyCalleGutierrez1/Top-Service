@@ -27,28 +27,21 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Solicitar Servicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about">Sobre nosotros</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
-                            </div>
-                        </li>
+                        
                     </ul>
                     <div class="d-flex">
                         <a class="btn btn-warning me-sm-2" type="submit" asp-controller="Login" asp-action="Index"> Login </a>
-                        <a class="btn btn-success my-2 my-sm-0" type="submit">Register</a>
+                        <a class="btn btn-success btn-rounded text-white">
+                            Registrarse!
+                        </a>
                     </div>
                 </div>
             </div>
@@ -59,16 +52,33 @@
         
     </header>
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main" >
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - PR_Top_Service_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    <section class="" id="footer">
+
+        <footer class="text-center text-white" style="background-color: #2f4153;">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <p class="d-flex justify-content-center align-items-center">
+                        <span class="me-3">Registrese gratis</span>
+                        <button type="button" class="btn btn-outline-light btn-rounded">
+                            Registrarse!
+                        </button>
+                    </p>
+                </section>
+            </div>
+
+            <div class="text-center p-3" style="background-color: rgba(44, 43, 43, 0.2);">
+                © 2023 Copyright:
+                <a class="text-white" href="#">TopService.com</a>
+            </div>
+
+        </footer>
+
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
