@@ -145,9 +145,17 @@ namespace PR_Top_Service_MVC.Models
                     .HasColumnType("date")
                     .HasColumnName("date");
 
-                entity.Property(e => e.Description)
+                entity.Property(e => e.ProfessionalTitles)
                     .HasMaxLength(150)
                     .IsUnicode(false);
+
+                entity.Property(e => e.Certifications)
+                  .HasMaxLength(150)
+                  .IsUnicode(false);
+
+                entity.Property(e => e.WorkExperience)
+                  .HasMaxLength(150)
+                  .IsUnicode(false);
 
                 entity.Property(e => e.IdProfessional).HasColumnName("Id_Professional");
 

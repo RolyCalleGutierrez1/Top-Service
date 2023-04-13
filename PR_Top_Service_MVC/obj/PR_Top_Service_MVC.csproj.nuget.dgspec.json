@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\59172\\Documents\\GitBash!\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {}
+    "C:\\Users\\USUARIO\\OneDrive - Universidad Privada del Valle\\Documents\\GitHub\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\59172\\Documents\\GitBash!\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {
+    "C:\\Users\\USUARIO\\OneDrive - Universidad Privada del Valle\\Documents\\GitHub\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\59172\\Documents\\GitBash!\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\OneDrive - Universidad Privada del Valle\\Documents\\GitHub\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
         "projectName": "PR_Top_Service_MVC",
-        "projectPath": "C:\\Users\\59172\\Documents\\GitBash!\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
-        "packagesPath": "C:\\Users\\59172\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\59172\\Documents\\GitBash!\\Top-Service\\PR_Top_Service_MVC\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\OneDrive - Universidad Privada del Valle\\Documents\\GitHub\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\OneDrive - Universidad Privada del Valle\\Documents\\GitHub\\Top-Service\\PR_Top_Service_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\59172\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,8 +71,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -84,7 +83,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
