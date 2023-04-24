@@ -1,0 +1,36 @@
+# ASP.NET / Visual Studio
+*.obj
+*.dll
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.[Pp]ublish.xml
+*.userprefs
+*.mdf
+*.ldf
+[Tt]est[Rr]esult*
+[Bb]uild[Ll]og.*
+
+# NuGet
+packages/
+*.nupkg
+!.nuget/
+*.psess
+*.vsp
+*.vspx
