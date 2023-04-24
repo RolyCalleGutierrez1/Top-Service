@@ -8,145 +8,145 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PR_Top_Service_MVC
 build_property.RootNamespace = PR_Top_Service_MVC
-build_property.ProjectDir = C:\Users\59172\Documents\GitBash!\PR-Top-Service\PR-Top-Service\Top-Service\PR_Top_Service_MVC\
+build_property.ProjectDir = C:\Users\59172\GitBash\Top-Service\PR_Top_Service_MVC\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\59172\Documents\GitBash!\PR-Top-Service\PR-Top-Service\Top-Service\PR_Top_Service_MVC
+build_property.MSBuildProjectDirectory = C:\Users\59172\GitBash\Top-Service\PR_Top_Service_MVC
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Home/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Home/Privacy.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Login/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/PagoQr/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/PagoQr/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnb1FyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Create.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Delete.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Details.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Edit.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/PersonAdmin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Postulation/Create.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Postulation/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Postulation/Delete.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Postulation/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Postulation/Details.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Postulation/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Postulation/Edit.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Postulation/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Postulation/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Postulation/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHVsYXRpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Profesional/Create.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Profesional/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Profesional/Delete.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Profesional/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Profesional/Details.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Profesional/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Profesional/Edit.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Profesional/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Profesional/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Profesional/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmVzaW9uYWxcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Service/Create.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Service/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Service/Delete.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Service/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Service/Details.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Service/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Service/Edit.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Service/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Service/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Service/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VydmljZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Shared/Error.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Users/Create.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Users/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Users/Delete.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Users/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Users/Details.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Users/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Users/Edit.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Users/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Users/Index.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/_ViewImports.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/_ViewStart.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/59172/Documents/GitBash\!/PR-Top-Service/PR-Top-Service/Top-Service/PR_Top_Service_MVC/Views/Shared/_Layout.cshtml]
+[C:/Users/59172/GitBash/Top-Service/PR_Top_Service_MVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-y8biui5zd6
