@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using PR_Top_Service_MVC.Models;
 
 namespace PR_Top_Service_MVC.Models
 {
@@ -32,7 +33,7 @@ namespace PR_Top_Service_MVC.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=tcp:topservicebd.database.windows.net,1433;Database=TopServiceBDO;User=topserviceadm;Password=t0ps3rvice@;Trusted_Connection=False;Encrypt=True;");
+                optionsBuilder.UseSqlServer("Server=MSI\\SQLEXPRESS;Database=TopService;User=sa;Password=Univalle;Trusted_Connection=True;Encrypt=False;");
             }
         }
 
@@ -121,6 +122,11 @@ namespace PR_Top_Service_MVC.Models
                 entity.Property(e => e.SecondLastName)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+                entity.Property(e => e.status)
+                    .HasMaxLength(1)
+                    .IsUnicode(false)
+                    .IsFixedLength();
+
 
                 entity.HasOne(d => d.IdDepartmentNavigation)
                     .WithMany(p => p.People)
@@ -145,9 +151,17 @@ namespace PR_Top_Service_MVC.Models
                     .HasColumnType("date")
                     .HasColumnName("date");
 
-                entity.Property(e => e.Description)
-                    .HasMaxLength(150)
-                    .IsUnicode(false);
+                entity.Property(e => e.ProfessionalTitles)
+                     .HasMaxLength(150)
+                     .IsUnicode(false);
+
+                entity.Property(e => e.Certification)
+                  .HasMaxLength(150)
+                  .IsUnicode(false);
+
+                entity.Property(e => e.WorkExperience)
+                  .HasMaxLength(150)
+                  .IsUnicode(false);
 
                 entity.Property(e => e.IdProfessional).HasColumnName("Id_Professional");
 
@@ -178,6 +192,7 @@ namespace PR_Top_Service_MVC.Models
                 entity.Property(e => e.Ocupation)
                     .HasMaxLength(50)
                     .IsUnicode(false);
+               
 
                 entity.HasOne(d => d.IdProfesionalNavigation)
                     .WithOne(p => p.Profesional)
@@ -312,5 +327,7 @@ namespace PR_Top_Service_MVC.Models
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        public DbSet<PR_Top_Service_MVC.Models.PersonAdmin>? PersonAdmin { get; set; }
     }
 }

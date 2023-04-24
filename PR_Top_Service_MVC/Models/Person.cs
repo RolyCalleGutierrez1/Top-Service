@@ -10,7 +10,7 @@ namespace PR_Top_Service_MVC.Models
         public string LastName { get; set; } = null!;
         public string SecondLastName { get; set; } = null!;
         public byte IdDepartment { get; set; }
-
+        public byte status { get; set; }
         public virtual Department IdDepartmentNavigation { get; set; } = null!;
         public virtual Admin? Admin { get; set; }
         public virtual Costumer? Costumer { get; set; }

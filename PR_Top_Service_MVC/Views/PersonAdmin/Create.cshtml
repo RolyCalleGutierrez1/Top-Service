@@ -1,0 +1,78 @@
+﻿@model PR_Top_Service_MVC.Models.PersonAdmin
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Nuevo</h1>
+
+<h4>Administrador</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label  class="control-label">Numero de celular</label>
+                <input asp-for="CelphoneNumber" class="form-control" />
+                <span asp-validation-for="CelphoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Fecha de Nacimiento</label>
+                <input asp-for="Birthdate" class="form-control" />
+                <span asp-validation-for="Birthdate" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <label  class="control-label">Nombre</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Apellido Paterno</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Apellido Materno</label>
+                <input asp-for="SecondLastName" class="form-control" />
+                <span asp-validation-for="SecondLastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Departamento</label>
+                <select asp-for="IdDepartment" class="form-control" asp-items="ViewBag.IdDepartment"></select>
+                
+            </div>
+           
+            <div class="form-group">
+                <label  class="control-label">Correo</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Contraseña</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="Role" class="control-label"></label>
+                <input asp-for="Role" class="form-control" value="Admin"/>
+                <span asp-validation-for="Role" class="text-danger"></span>
+            </div>
+            <div class="form-group" hidden>
+                <label asp-for="status" class="control-label"></label>
+                <input asp-for="status" class="form-control" value=1 />
+                <span asp-validation-for="status" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Registrar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
