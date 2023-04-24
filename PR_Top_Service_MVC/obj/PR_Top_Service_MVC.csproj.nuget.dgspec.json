@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\59172\\Documents\\GitBash!\\PR-Top-Service\\PR-Top-Service\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {}
+    "C:\\Users\\59172\\GitBash\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\59172\\Documents\\GitBash!\\PR-Top-Service\\PR-Top-Service\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {
+    "C:\\Users\\59172\\GitBash\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\59172\\Documents\\GitBash!\\PR-Top-Service\\PR-Top-Service\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
+        "projectUniqueName": "C:\\Users\\59172\\GitBash\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
         "projectName": "PR_Top_Service_MVC",
-        "projectPath": "C:\\Users\\59172\\Documents\\GitBash!\\PR-Top-Service\\PR-Top-Service\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
+        "projectPath": "C:\\Users\\59172\\GitBash\\Top-Service\\PR_Top_Service_MVC\\PR_Top_Service_MVC.csproj",
         "packagesPath": "C:\\Users\\59172\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\59172\\Documents\\GitBash!\\PR-Top-Service\\PR-Top-Service\\Top-Service\\PR_Top_Service_MVC\\obj\\",
+        "outputPath": "C:\\Users\\59172\\GitBash\\Top-Service\\PR_Top_Service_MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\59172\\AppData\\Roaming\\NuGet\\NuGet.Config",
