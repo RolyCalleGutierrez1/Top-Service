@@ -329,5 +329,7 @@ namespace PR_Top_Service_MVC.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 
         public DbSet<PR_Top_Service_MVC.Models.PersonAdmin>? PersonAdmin { get; set; }
+
+        public DbSet<PR_Top_Service_MVC.Models.CustomerUser>? CustomerUser { get; set; }
     }
 }
