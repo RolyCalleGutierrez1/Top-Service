@@ -7,11 +7,12 @@ namespace PR_Top_Service_MVC.Models
     {
         public int IdQuotation { get; set; }
         public int IdCostumer { get; set; }
+        public int IdProfesional { get; set; }
         public DateTime Date { get; set; }
         public string Service { get; set; } = null!;
         public string Description { get; set; } = null!;
-        public string Status { get; set; } = null!;
-
-        public virtual Costumer IdCostumerNavigation { get; set; } = null!;
+        public byte Status { get; set; }
+        public virtual Costumer? IdCostumerNavigation { get; set; } = null!;
+        public virtual Profesional? IdProfesionalNavigation { get; set; } = null!;
     }
 }

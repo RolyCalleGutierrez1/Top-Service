@@ -21,12 +21,8 @@ namespace PR_Top_Service_MVC.Controllers
         // GET: Service
         public async Task<IActionResult> Index()
         {
-            IQueryable<Service> service = from Service in _context.Services
-
-                                          where Service.Status == 1
-                                          select Service;
-
-            return View(await service.ToListAsync());
+            var topServiceBDOContext = _context.Services.Include(s => s.IdAdminNavigation).Include(s => s.IdCostumerNavigation).Include(s => s.IdProfessionalNavigation);
+            return View(await topServiceBDOContext.ToListAsync());
         }
 
         // GET: Service/Details/5
@@ -39,6 +35,7 @@ namespace PR_Top_Service_MVC.Controllers
 
             var service = await _context.Services
                 .Include(s => s.IdAdminNavigation)
+                .Include(s => s.IdCostumerNavigation)
                 .Include(s => s.IdProfessionalNavigation)
                 .FirstOrDefaultAsync(m => m.IdService == id);
             if (service == null)
@@ -53,7 +50,8 @@ namespace PR_Top_Service_MVC.Controllers
         public IActionResult Create()
         {
             ViewData["IdAdmin"] = new SelectList(_context.Admins, "IdAdmin", "IdAdmin");
-            
+            ViewData["IdCostumer"] = new SelectList(_context.Costumers, "IdCostumer", "IdCostumer");
+            ViewData["IdProfessional"] = new SelectList(_context.Profesionals, "IdProfesional", "IdProfesional");
             return View();
         }
 
@@ -62,17 +60,28 @@ namespace PR_Top_Service_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(int id,[Bind("IdService,IdAdmin,IdProfessional,Name,Description,Date,Status")] Service service)
+        public async Task<IActionResult> Create([Bind("IdService,IdAdmin,IdProfessional,IdCostumer,Name,Description,Date,Status")] Service service)
         {
             if (ModelState.IsValid)
             {
-                service.IdProfessional = id;
+                string description = Request.Form["description"];
+                decimal total = decimal.Parse(Request.Form["total"]);
+
+                Receipt r = new()
+                {
+                    IdReceipt =service.IdService,
+                    Description = description,
+                    Total = total
+                };
+                _context.Add(r);
+                await _context.SaveChangesAsync();
                 _context.Add(service);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdAdmin"] = new SelectList(_context.Admins, "IdAdmin", "IdAdmin", service.IdAdmin);
-           
+            ViewData["IdCostumer"] = new SelectList(_context.Costumers, "IdCostumer", "IdCostumer", service.IdCostumer);
+            ViewData["IdProfessional"] = new SelectList(_context.Profesionals, "IdProfesional", "IdProfesional", service.IdProfessional);
             return View(service);
         }
 
@@ -90,6 +99,7 @@ namespace PR_Top_Service_MVC.Controllers
                 return NotFound();
             }
             ViewData["IdAdmin"] = new SelectList(_context.Admins, "IdAdmin", "IdAdmin", service.IdAdmin);
+            ViewData["IdCostumer"] = new SelectList(_context.Costumers, "IdCostumer", "IdCostumer", service.IdCostumer);
             ViewData["IdProfessional"] = new SelectList(_context.Profesionals, "IdProfesional", "IdProfesional", service.IdProfessional);
             return View(service);
         }
@@ -99,7 +109,7 @@ namespace PR_Top_Service_MVC.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdService,IdAdmin,IdProfessional,Name,Description,Date,Status")] Service service)
+        public async Task<IActionResult> Edit(int id, [Bind("IdService,IdAdmin,IdProfessional,IdCostumer,Name,Description,Date,Status")] Service service)
         {
             if (id != service.IdService)
             {
@@ -110,6 +120,9 @@ namespace PR_Top_Service_MVC.Controllers
             {
                 try
                 {
+
+                    
+
                     _context.Update(service);
                     await _context.SaveChangesAsync();
                 }
@@ -127,6 +140,7 @@ namespace PR_Top_Service_MVC.Controllers
                 return RedirectToAction(nameof(Index));
             }
             ViewData["IdAdmin"] = new SelectList(_context.Admins, "IdAdmin", "IdAdmin", service.IdAdmin);
+            ViewData["IdCostumer"] = new SelectList(_context.Costumers, "IdCostumer", "IdCostumer", service.IdCostumer);
             ViewData["IdProfessional"] = new SelectList(_context.Profesionals, "IdProfesional", "IdProfesional", service.IdProfessional);
             return View(service);
         }
@@ -141,6 +155,7 @@ namespace PR_Top_Service_MVC.Controllers
 
             var service = await _context.Services
                 .Include(s => s.IdAdminNavigation)
+                .Include(s => s.IdCostumerNavigation)
                 .Include(s => s.IdProfessionalNavigation)
                 .FirstOrDefaultAsync(m => m.IdService == id);
             if (service == null)
@@ -163,7 +178,6 @@ namespace PR_Top_Service_MVC.Controllers
             var service = await _context.Services.FindAsync(id);
             if (service != null)
             {
-                service.Status = 0;
                 _context.Services.Remove(service);
             }
             

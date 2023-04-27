@@ -4,47 +4,128 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Nuevo</h1>
+<h1>Create</h1>
+<div>
 
-<h4>Servicio</h4>
+</div>
+<h4>Service</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
+        <ul id="miLista"></ul>
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
+
+            <div id="Service">
+                <div class="form-group">
                 <label asp-for="IdAdmin" class="control-label"></label>
                 <select asp-for="IdAdmin" class ="form-control" asp-items="ViewBag.IdAdmin"></select>
             </div>
-            
             <div class="form-group">
-                <label  class="control-label">Nombre del servicio</label>
+                <label asp-for="IdProfessional" class="control-label"></label>
+                <select asp-for="IdProfessional" class ="form-control" asp-items="ViewBag.IdProfessional"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCostumer" class="control-label"></label>
+                <select asp-for="IdCostumer" class ="form-control" asp-items="ViewBag.IdCostumer"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label class="control-label">Descripcion</label>
+                <label asp-for="Description" class="control-label"></label>
                 <input asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label  class="control-label">Fecha para el servicio</label>
+                <label asp-for="Date" class="control-label"></label>
                 <input asp-for="Date" class="form-control" />
                 <span asp-validation-for="Date" class="text-danger"></span>
             </div>
-            <div class="form-group" hidden>
+            <div class="form-group">
                 <label asp-for="Status" class="control-label"></label>
-                <input asp-for="Status" value=1 class="form-control" />
+                <input asp-for="Status" class="form-control" />
                 <span asp-validation-for="Status" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Crear" class="btn btn-primary" />
+            
+                <button type="button"  onclick="OcultarForm()" class="btn btn-primary" >Siguiente</button>
+            
             </div>
+            
+               
+            <div id ="Receipt"  style ="display:none">
+
+                 <h1>Create</h1>
+
+                <h4>Receipt</h4>
+                <input type="text" id="nuevoElemento" required>
+              <button type="button" onclick="agregarElemento()">Agregar</button>
+           
+
+           <div class="form-group" >
+                <label  class="control-label"></label>
+                <input  name="description" id="description" class="form-control" required />
+                
+            </div>
+            <div class="form-group">
+                <label  class="control-label">Ingrese el total</label>
+                <input name="total" class="form-control" required />
+              
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+            </div>
+              
+
         </form>
     </div>
 </div>
 
+
+
+
+
+
+
+<section>
+    <script>
+          var miListaString = "";
+        function agregarElemento() {
+         console.log("anadir")
+          var nuevoElemento = document.getElementById("nuevoElemento").value;
+          var listaHTML = document.getElementById("miLista");
+         
+          var nuevoElementoHTML = document.createElement("li");
+          nuevoElementoHTML.innerText = nuevoElemento;
+          listaHTML.appendChild(nuevoElementoHTML);
+          
+          miListaString += nuevoElemento + ",";
+          
+          document.getElementById("description").value=miListaString;
+    
+
+        }
+        function OcultarForm() {
+         console.log("ocultar form")
+          var divReceipt = document.getElementById("Receipt");
+          var divService = document.getElementById("Service");
+          divReceipt.style.display = "inline-block"
+          divService.style.display = "none"
+         
+    
+
+        }
+    </script>   
+
+      
+</section>
+
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 

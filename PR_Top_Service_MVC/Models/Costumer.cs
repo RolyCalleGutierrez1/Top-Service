@@ -8,12 +8,14 @@ namespace PR_Top_Service_MVC.Models
         public Costumer()
         {
             Quotations = new HashSet<Quotation>();
+            Services = new HashSet<Service>();
         }
 
         public int IdCostumer { get; set; }
         public string Address { get; set; } = null!;
 
         public virtual Person IdCostumerNavigation { get; set; } = null!;
-        public virtual ICollection<Quotation> Quotations { get; set; }
+        public virtual ICollection<Quotation>? Quotations { get; set; }
+        public virtual ICollection<Service>? Services { get; set; }
     }
 }

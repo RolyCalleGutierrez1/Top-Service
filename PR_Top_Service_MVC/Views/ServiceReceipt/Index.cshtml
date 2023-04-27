@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PR_Top_Service_MVC.Models.Service>
+﻿@model IEnumerable<PR_Top_Service_MVC.Models.ServiceReceipt>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,6 +13,15 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.IdAdmin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProfessional)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdCostumer)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
@@ -25,13 +34,13 @@
                 @Html.DisplayNameFor(model => model.Status)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdAdminNavigation)
+                @Html.DisplayNameFor(model => model.IdReceipt)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdProfessionalNavigation)
+                @Html.DisplayNameFor(model => model.DescriptionReceipt)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdCostumerNavigation)
+                @Html.DisplayNameFor(model => model.Total)
             </th>
             <th></th>
         </tr>
@@ -39,6 +48,15 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdAdmin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdProfessional)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdCostumer)
+            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -52,19 +70,18 @@
                 @Html.DisplayFor(modelItem => item.Status)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdAdminNavigation.IdAdmin)
+                @Html.DisplayFor(modelItem => item.IdReceipt)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdProfessionalNavigation.IdProfesional)
+                @Html.DisplayFor(modelItem => item.DescriptionReceipt)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdCostumerNavigation.IdCostumer)
+                @Html.DisplayFor(modelItem => item.Total)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.IdService">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.IdService">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdService">Delete</a>|
-                  <a asp-action="Create" asp-controller="Receipt" asp-route-id="@item.IdService">Generar Recibo</a> 
+                <a asp-action="Delete" asp-route-id="@item.IdService">Delete</a>
             </td>
         </tr>
 }

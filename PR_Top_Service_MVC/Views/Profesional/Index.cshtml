@@ -31,7 +31,8 @@
             </td>
           
             <td>
-                <a asp-controller="Service" asp-action="Create" asp-route-id="@item.IdProfesional">Nuevo Servicio</a>
+                 <a asp-controller="ServiceReceipt" asp-action="Create" asp-route-id="@item.IdProfesional">Nuevo Servicio</a>-
+                <a asp-controller="Quotation" asp-action="Create" asp-route-id="@item.IdProfesional">Solicitar Cotizacion</a>
             </td>
         </tr>
 }

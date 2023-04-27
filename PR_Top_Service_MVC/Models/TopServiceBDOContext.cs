@@ -215,7 +215,8 @@ namespace PR_Top_Service_MVC.Models
                     .HasMaxLength(150)
                     .IsUnicode(false);
 
-                entity.Property(e => e.IdCostumer).HasColumnName("Id_Costumer");
+                entity.Property(e => e.IdCostumer).HasColumnName("IdCostumer");
+                entity.Property(e => e.IdProfesional).HasColumnName("IdProfesional");
 
                 entity.Property(e => e.Service)
                     .HasMaxLength(30)
@@ -231,6 +232,12 @@ namespace PR_Top_Service_MVC.Models
                     .HasForeignKey(d => d.IdCostumer)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Quotation_Costumer");
+
+                entity.HasOne(d => d.IdProfesionalNavigation)
+                .WithMany(p => p.Quotations)
+                .HasForeignKey(d => d.IdProfesional)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_Quotation_Profesional");
             });
 
             modelBuilder.Entity<Receipt>(entity =>
@@ -273,6 +280,7 @@ namespace PR_Top_Service_MVC.Models
                 entity.Property(e => e.IdAdmin).HasColumnName("Id_Admin");
 
                 entity.Property(e => e.IdProfessional).HasColumnName("Id_Professional");
+                entity.Property(e => e.IdCostumer).HasColumnName("Id_Costumer");
 
                 entity.Property(e => e.Name)
                     .HasMaxLength(50)
@@ -294,6 +302,12 @@ namespace PR_Top_Service_MVC.Models
                     .HasForeignKey(d => d.IdProfessional)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Service_Profesional");
+
+                entity.HasOne(d => d.IdCostumerNavigation)
+                    .WithMany(p => p.Services)
+                    .HasForeignKey(d => d.IdCostumer)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_Service_Costumer");
             });
 
             modelBuilder.Entity<User>(entity =>
@@ -329,5 +343,7 @@ namespace PR_Top_Service_MVC.Models
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
 
         public DbSet<PR_Top_Service_MVC.Models.PersonAdmin>? PersonAdmin { get; set; }
+
+        public DbSet<PR_Top_Service_MVC.Models.ServiceReceipt>? ServiceReceipt { get; set; }
     }
 }

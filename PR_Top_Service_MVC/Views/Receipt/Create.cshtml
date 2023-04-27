@@ -1,0 +1,62 @@
+﻿@model PR_Top_Service_MVC.Models.Receipt
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Receipt</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <ul id="miLista"></ul>
+        <form asp-action="Create">
+            <div asp-validation-summary="All" class="text-danger"></div>
+         
+              <input type="text" id="nuevoElemento">
+              <button type="button" onclick="agregarElemento()">Agregar</button>
+           
+
+           <div class="form-group" >
+                <label  class="control-label"></label>
+                <input  name="description" id="description" class="form-control" />
+                
+            </div>
+            <div class="form-group">
+                <label asp-for="Total" class="control-label"></label>
+                <input asp-for="Total" class="form-control" />
+                <span asp-validation-for="Total" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<section>
+    <script>
+          var miListaString = "";
+        function agregarElemento() {
+         
+          var nuevoElemento = document.getElementById("nuevoElemento").value;
+          var listaHTML = document.getElementById("miLista");
+         
+          var nuevoElementoHTML = document.createElement("li");
+          nuevoElementoHTML.innerText = nuevoElemento;
+          listaHTML.appendChild(nuevoElementoHTML);
+          
+          miListaString += nuevoElemento + ",";
+          
+          document.getElementById("description").value=miListaString;
+    
+
+        }
+
+    </script>   
+</section>
+

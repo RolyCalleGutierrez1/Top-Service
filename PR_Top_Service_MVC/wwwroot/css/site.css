@@ -23,3 +23,18 @@ body {
     bottom: 0;
     width: 100%;
 }
+
+
+.list-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 45%; /* ajusta el ancho de cada contenedor según tus necesidades */
+    margin-right: 5%; /* margen entre los contenedores */
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
