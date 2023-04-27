@@ -10,11 +10,12 @@ namespace PR_Top_Service_MVC.Models
         public int IdProfessional { get; set; }
         public string Name { get; set; } = null!;
         public string Description { get; set; } = null!;
-        public DateTime Date { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? FinishedDate { get; set; }
         public string Status { get; set; } = null!;
 
-        public virtual Admin IdAdminNavigation { get; set; } = null!;
-        public virtual Profesional IdProfessionalNavigation { get; set; } = null!;
+        public virtual Admin? IdAdminNavigation { get; set; } = null!;
+        public virtual Profesional? IdProfessionalNavigation { get; set; } = null!;
         public virtual Receipt? Receipt { get; set; }
     }
 }

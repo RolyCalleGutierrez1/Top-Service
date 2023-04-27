@@ -257,7 +257,8 @@ namespace PR_Top_Service_MVC.Models
 
                 entity.Property(e => e.IdService).HasColumnName("Id_Service");
 
-                entity.Property(e => e.Date).HasColumnType("date");
+                entity.Property(e => e.StartDate).HasColumnType("date");
+                entity.Property(e => e.FinishedDate).HasColumnType("date");
 
                 entity.Property(e => e.Description)
                     .HasMaxLength(150)
